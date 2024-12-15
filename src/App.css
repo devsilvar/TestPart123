@@ -1,0 +1,47 @@
+* {
+  font-family: 'Montserrat', serif;
+}
+/* Card container */
+.card {
+  width: 50%;
+  max-width: 400px; /* Set a max-width for the card */
+  margin: 20px auto; /* Center the card with auto margin */
+  background-color: #fff; /* White background */
+  border: 1px solid #ddd; /* Light gray border */
+  border-radius: 10px; /* Rounded corners */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+  overflow: hidden; /* Hide overflow */
+  transition: transform 0.3s ease, box-shadow 0.3s ease; /* Smooth transition */
+  padding: 5px; /* Padding inside the card */
+}
+
+/* Card hover effect */
+.card:hover {
+  transform: scale(1.05); /* Scale up slightly on hover */
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2); /* Darker shadow on hover */
+}
+
+/* Card header */
+.card-header {
+  font-size: 1.5em; /* Larger font size for header */
+  font-weight: bold; /* Bold text for header */
+  margin-bottom: 10px; /* Margin below the header */
+  color: #333; /* Dark text color for header */
+}
+
+/* Card body */
+.card-body {
+  font-size: 1em; /* Standard font size for body */
+  color: #555; /* Medium gray text color */
+}
+
+/* Card footer */
+.card-footer {
+  margin-top: 15px; /* Margin above the footer */
+  text-align: center; /* Center align the footer text */
+  font-size: 0.9em; /* Slightly smaller font size for footer */
+  color: #777; /* Light gray text color */
+}
+h3 {
+  text-align: center;
+}
