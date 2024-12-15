@@ -1,50 +1,141 @@
-# React + TypeScript + Vite
+# React Application README
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+=====================================
 
-Currently, two official plugins are available:
+## Table of Contents
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+- [Introduction](#introduction)
+- [Getting Started](#getting-started)
+- [Features](#features)
+- [Components](#components)
+- [Installation](#installation)
+- [Usage](#usage)
+- [Contributing](#contributing)
+- [License](#license)
 
-## Expanding the ESLint configuration
+## Introduction
 
-If you are developing a production application, we recommend updating the configuration to enable type aware lint rules:
+This is a React application built to demonstrate various features and concepts. The application is composed of four main sections, each showcasing a different aspect of React development.
 
-- Configure the top-level `parserOptions` property like this:
+## Getting Started
 
-```js
-export default tseslint.config({
-  languageOptions: {
-    // other options...
-    parserOptions: {
-      project: ['./tsconfig.node.json', './tsconfig.app.json'],
-      tsconfigRootDir: import.meta.dirname,
-    },
-  },
-})
-```
+To get started with this application, you will need to have Node.js and npm installed on your machine.
 
-- Replace `tseslint.configs.recommended` to `tseslint.configs.recommendedTypeChecked` or `tseslint.configs.strictTypeChecked`
-- Optionally add `...tseslint.configs.stylisticTypeChecked`
-- Install [eslint-plugin-react](https://github.com/jsx-eslint/eslint-plugin-react) and update the config:
+## Features
 
-```js
-// eslint.config.js
-import react from 'eslint-plugin-react'
+- Displays four sections, each with a heading and a child component
+- Demonstrates the use of React functional components
+- Includes a modal portal with a custom message
 
-export default tseslint.config({
-  // Set the react version
-  settings: { react: { version: '18.3' } },
-  plugins: {
-    // Add the react plugin
-    react,
-  },
-  rules: {
-    // other rules...
-    // Enable its recommended rules
-    ...react.configs.recommended.rules,
-    ...react.configs['jsx-runtime'].rules,
-  },
-})
-```
+## Components
+
+- `FetchData`: A component that fetches data from an API (not implemented)
+- `TodoApp`: A simple todo list application
+- `Concepts`: A component that demonstrates various React concepts
+- `ModalPortal`: A component that renders a modal with a custom message
+
+## Installation
+
+To install the dependencies, run the following command:
+
+## Getting Started
+
+To get started with the app, follow these steps:
+
+1. Clone the repository:
+
+   ```bash
+   git clone https://github.com/your-username/your-repo-name.git
+
+   ```
+
+2. Navigate to the project directory::
+   ```bash
+   npm install
+   ```
+
+# or
+
+yarn install
+
+3. Install dependencies::
+
+   ```bash
+   cd FrontendTest
+
+   ```
+
+4. Start the app:
+   ```bash
+   npm run dev
+   ```
+
+# or
+
+yarn start
+
+Open your browser and navigate to http://localhost:5173.
+
+
+## Components
+=====================================
+
+### Overview
+The following components are used in this application.
+
+### Component List
+
+#### FetchData
+- **Description**: A component that fetches data from an API (not implemented).
+- **Props**: None
+- **Usage**: 
+  ```jsx
+  <FetchData />
+
+#### TodoApp
+- **Description**: A simple todo list application.
+- **Props**: None
+- **Usage**: 
+  ```jsx
+  <TodoApp />
+
+#### Concepts
+- **Description**: A component that demonstrates various React concepts.
+- **Props**: None
+- **Usage**: 
+  ```jsx
+  <Concepts />
+
+
+#### ModalPortal
+- **Description**: A component that renders a modal with a custom message.
+- **Props**:
+  - `ModalContent`: The content to be displayed in the modal.
+- **Usage**:
+  ```jsx
+  <ModalPortal ModalContent="Hello, world!" />
+
+
+## Dependencies
+=====================================
+
+### Overview
+The following dependencies are used in this application.
+
+### Dependency List
+
+#### React
+- **Version**: ^17.0.2
+- **Description**: The JavaScript library for building user interfaces.
+
+#### React DOM
+- **Version**: ^17.0.2
+- **Description**: The package that provides DOM-related functionality for React.
+
+#### npm
+- **Version**: ^6.14.13
+- **Description**: The package manager used to install dependencies.
+
+#### Node.js
+- **Version**: ^14.17.0
+- **Description**: The JavaScript runtime environment used to run the application.
